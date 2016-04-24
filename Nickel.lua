@@ -5,14 +5,9 @@ function Nickel:init(x,y,rotation)
     self:log("init")
     self:setup(x,y,rotation)
     self.image = readImage("Project:nickel")
-    self.size = 100
+    self.size = 90
 
 end
-
-function Nickel:adjustCoinPosition()
-    self.x = 200
-end
-
 
 
 function Nickel:touched(touch)

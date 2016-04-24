@@ -20,9 +20,7 @@ function Coin:draw()
     translate(self.x,self.y)
     rotate(self.rotation)
     sprite(self.image,0,0,self.size)
-
-    self:adjustCoinPosition()
-        popMatrix()
+    popMatrix()
 
 end
 
