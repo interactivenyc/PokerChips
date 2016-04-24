@@ -15,11 +15,15 @@ end
 
 function Coin:draw()
     -- Codea does not automatically call this method
+    self:log("draw")
     pushMatrix()
     translate(self.x,self.y)
     rotate(self.rotation)
     sprite(self.image,0,0,self.size)
-    popMatrix()
+
+    self:adjustCoinPosition()
+        popMatrix()
+
 end
 
 function Coin:touched(touch)

@@ -3,29 +3,22 @@
 -- Use this function to perform your initial setup
 function setup()
     print("Hello World!")
-    sprite("Project:dime")
-    
-
+    sprite()
     
     margin = 100
-    
     coins = {}
     
     coins[1] = Penny(margin,margin,0)
     coins[2] = Penny(WIDTH-margin,margin,90)
     coins[3] = Penny(WIDTH-margin,HEIGHT-margin,180)
     coins[4] = Penny(margin,HEIGHT-margin,-90)
+    
     coins[5] = Nickel(margin,margin,0)
     coins[6] = Nickel(WIDTH-margin,margin,90)
     coins[7] = Nickel(WIDTH-margin,HEIGHT-margin,180)
     coins[8] = Nickel(margin,HEIGHT-margin,-90)
     
-    
-    --Nickel(200,100,0)
-    --Dime(300,100,0)
-    --Quarter(400,100,0)
-    
-    parameter.watch(#coins)
+    parameter.watch("#coins")
 
 end
 

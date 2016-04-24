@@ -8,6 +8,10 @@ function Penny:init(x,y,rotation)
     self.size = 75
 end
 
+function Penny:adjustCoinPosition()
+    
+end
+
 
 function Penny:touched(touch)
     -- Codea does not automatically call this method

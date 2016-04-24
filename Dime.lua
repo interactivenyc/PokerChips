@@ -5,9 +5,7 @@ function Dime:init(x,y)
     
 end
 
-function Dime:draw()
-    -- Codea does not automatically call this method
-end
+
 
 function Dime:touched(touch)
     -- Codea does not automatically call this method

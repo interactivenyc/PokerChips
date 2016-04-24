@@ -9,10 +9,11 @@ function Nickel:init(x,y,rotation)
 
 end
 
-function Nickel:draw()
-    -- Codea does not automatically call this method
-
+function Nickel:adjustCoinPosition()
+    self.x = 200
 end
+
+
 
 function Nickel:touched(touch)
     -- Codea does not automatically call this method

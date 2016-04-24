@@ -5,9 +5,7 @@ function Quarter:init(x,y)
 
 end
 
-function Quarter:draw()
-    -- Codea does not automatically call this method
-end
+
 
 function Quarter:touched(touch)
     -- Codea does not automatically call this method
